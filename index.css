@@ -1,0 +1,107 @@
+@font-face {
+    font-family: round;
+    src: url(VarelaRound-Regular.ttf);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     font-family: round;
+     color: var(--text);
+     text-decoration: none;
+}
+
+:root {
+    --blurple: #5865F2;
+    --d-blurple: #454FBF;
+    --dark: #23272A;
+    --text: #fff;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: var(--dark);
+}
+
+nav {
+    background-color: var(--d-blurple);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    height: 3.5rem;
+    margin-inline: 15px;
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    background-color: rgb(52, 59, 143);
+}
+
+.n-items {
+    list-style: none;
+    margin-inline: 15px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.n-item {
+    display: inline;
+    margin-inline: 15px;
+    transition: all .2s;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.n-item:hover {
+    background-color: rgb(52, 59, 143);
+    cursor: pointer;
+}
+
+.top-area {
+    background-color: var(--blurple);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.top-title {
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.info {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 25px;
+}
+
+.t {
+    margin-block: 25px;
+}
+
+.user {
+    text-decoration: underline;
+}
+
+::selection {
+    color: var(--text);
+    background-color: var(--blurple);
+}
+
+.user:hover {
+    cursor: pointer;
+}
